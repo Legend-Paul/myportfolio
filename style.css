@@ -21,6 +21,7 @@ body {
     font-family: "Poppins", serif;
     color: var(--white);
     overflow-x: hidden;
+    
 }
 h1 {
     font-size: 1.5rem;
@@ -73,20 +74,43 @@ nav {
 .section {
     min-height: 100vh;
     margin-right: 7rem;
+    max-width: 100%;
+   
 }
 
 .home-sect {
     .home-container {
         height: 100%;
         display: grid;
-        
-        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-       
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */       
         width: 100%;
+        gap: 4rem;
+
         .left {
             display: flex;
             width: 100%;
             height: 100%;
+            justify-content: center;
+           
+            .img-container {
+                outline: .15rem solid var(--white);
+                overflow: hidden;
+                border-radius: 50%;
+                margin-top: 2rem;
+                transition: var(--small-transition);
+                img {
+                    transition: var(--small-transition);
+                    &:hover {
+                        transform: scaleX(-1);
+                        
+                    }
+                }
+                &:hover {
+                    box-shadow: 1px 2px .8rem rgba(255,255,255, .6);
+                }
+                
+            }
+                        
             
             &::before {
                 content: '';
@@ -96,7 +120,7 @@ nav {
                 right: -50px;
                 bottom: 0;
                 height: 50%;
-                width: 200%;
+                width: 100%;
                 /* clip-path: polygon(59% 19%, 59% 85%, 0 100%, 0 0); */
                 clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
                 background-color: var(--primary-color);
@@ -106,58 +130,11 @@ nav {
                
 
             } 
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                margin: 4rem 0 0 8rem;
-                height: 15rem;
-                width: 15rem;
-                /* width: 50%; */
-                background-image: url(images/paul\ -\ Copy\ 1.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                outline: 2px solid var(--white);
-                border-radius: 50%;
-                align-items: center;
-                margin-left: 7rem;
-                transition: var(--small-transition);
-                cursor: pointer;
-                &:hover {
-                    transform: scaleX(-1);
-                    background-color: #fff;
-                }
-                
-
-            } 
-            /* .border-container{
-                margin: auto;
-                margin-top: -10px;               
-                width: 30%;
-                height: 100%;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: .5rem;
-                overflow: hidden;
-                outline: 3px ;
-                outline: 3px solid var(--white);
-                outline-offset: .5rem;
-                z-index: 20;
-                
-                .img-container {
-                    
-                    
-                }
-            } */
+           
             
         }
         .right {
-            margin-top: 9rem;
+            /* margin-top: 9rem; */
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -178,7 +155,8 @@ nav {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                
+                margin-bottom: 3rem;
+
                 button {
                     display: flex;
                     gap: 1.5rem;
@@ -190,6 +168,7 @@ nav {
                     padding:.8rem 1.2rem;
                     position: relative;
                     cursor: pointer;
+                    /* margin: 3rem; */
                     p, i {
                         z-index: 12;
                     }
@@ -266,6 +245,8 @@ i {
         
         width: 50%;
         height: 50%;
+        
+        
         .img {
             width: 15rem;
             height: 15rem;
@@ -282,6 +263,7 @@ i {
                 
             }
         }
+
       
 
     }
@@ -483,12 +465,23 @@ skills {
 }
 
 @media screen and (max-width: 700px){
+    body {
+        padding-bottom: 4rem;
+    }
     nav {
     top: 90%;
     bottom: 10%;
     right: 50%;
     left: 50%;
     flex-direction: row;
+    
+
+    div{
+        padding: .4rem .8rem;
+        i {
+            font-size: 1.4rem;
+        }
+        }
 
     }
     .section {
@@ -498,6 +491,8 @@ skills {
     .more-information {
         display: flex;
         flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 3rem;
     }
 }
 @media screen and ( min-width: 700px){
