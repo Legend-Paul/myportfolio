@@ -492,7 +492,7 @@ skills {
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }
 @media screen and ( min-width: 700px){
