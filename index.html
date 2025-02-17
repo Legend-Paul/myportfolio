@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <!-- Css file link -->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <!-- Loading Poppins Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Loading bootstrap-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="body">
@@ -187,20 +188,21 @@
                     </div>
 
                     <div class="personal-info">
+                        <h4>My personal contact</h4>
                         <div class="name">
-                            <p>My name:</p>
-                            <p>Legend Paul</p>
+                            <p>Name:</p>
+                            <p>Paul Maina</p>
                         </div>
                         <div class="email">
-                            <p>My email:</p>
+                            <p>Email:</p>
                             <a href="mailto:kamunayp950@gmail.com">kamunayp950@gmail.com</a>
                         </div>
                         <div class="phone-no">
-                            <p>My Phone no:</p>
+                            <p>Phone no:</p>
                             <a href="tel:+254708521286">+2547 08521286</a>
                         </div>
                         <div class="location">
-                            <p>My location:</p>
+                            <p>Location:</p>
                             <p class="nyeri">Nyeri, Kenya</p>
                         </div>
                         <div class="social-media-icons">
@@ -213,21 +215,22 @@
 
                 </div>
                 <div class="client-contact">
-                    <form action="POST">                        
+                    <form action="POST">                       
                         
                         <label>
                             Name:
-                            <input type="text" required name="required name" placeholder="Paul Maina">
+                            <input type="text" required name="required name" placeholder="Your name">
                         </label>
                         <label>
                             Email:
-                            <input type="email" required name="email" placeholder="example@gmail.com">
+                            <input type="email" required name="email" placeholder="youremail@gmail.com">
                         </label>
                         <label>
                             Password:
                             <input type="password" required name="password" pattern="[0-9a-zA-Z]{8,}" title="Must contain at least 8 characters">
                         </label>
-                        <textarea required name="information" id="" rows="10" cols="40" placeholder="Enter message"></textarea>
+                        <label for="textarea">Message:</label>
+                        <textarea required name="information" id="textarea" rows="10" cols="40" placeholder="Enter message"></textarea>
                         <button type="submit">Submit</button>
                         
                     </form>
@@ -235,6 +238,8 @@
             </div>
         </section>        
     </main>
+    
+    <!-- Loading js file -->
     <script src="script.js"></script>
 </body>
 </html>

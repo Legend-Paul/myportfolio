@@ -4,7 +4,7 @@ let sections = document.querySelectorAll(".section");
 let nav = document.querySelector(".nav-bar");
 
 navBtn.forEach(btn=>{
-    // btn.classList.remove("active");
+    
     btn.addEventListener("click", function(){
         let currentBtn = document.querySelector(".active");
         if (currentBtn) {
@@ -31,25 +31,3 @@ window.onscroll = ()=>{
         }
     });
 }
-
-// body.addEventListener("click", (e)=>{
-   
-//     let element = e.target.dataset.id;
-    
-//     if (element) {
-//         navBtn.forEach(btn=>{
-//             btn.classList.remove("active");
-//         });
-//         e.target.classList.add("active");
-//         sections.forEach(section=>{
-            
-//             section.classList.remove("active-section");
-//         });
-//         let currentSection = document.getElementById(element);
-//         currentSection.classList.add("active-section");
-//     }
-    
-    
-// });
-
-
