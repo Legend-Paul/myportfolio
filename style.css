@@ -27,7 +27,7 @@ h1 {
     z-index: 11;
     text-align: center;
     padding-top: 1rem;
-    line-height: 2rem;
+    line-height: 4rem;
 }
 h2,
 h3 {
@@ -38,10 +38,7 @@ p {
     font-weight: 200;
     font-size: 1.15rem;
 }
-.heading-desc {
-    text-align: center;
-    margin-top: 2rem;
-}
+
 nav {
     position: fixed;
     top: 50%;
@@ -84,10 +81,39 @@ nav {
 }
 
 .home-sect {
+    position: inherit;
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        padding-bottom: 3rem;
+        background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--light-primary-color)
+        );
+        .heading-desc {
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+        &::before {
+            content: "";
+            background-color: var(--background-color);
+            position: absolute;
+            bottom: -1.75rem;
+            left: 0;
+            width: 100%;
+            height: 3rem;
+            z-index: 15;
+            transform: skewY(-1.75deg);
+        }
+    }
     .home-container {
-        height: 100%;
         display: flex;
-        margin-top: 5rem;
+        padding-top: 12rem;
         width: 100%;
         gap: 4rem;
 
@@ -109,26 +135,6 @@ nav {
                         transform: scaleX(-1);
                     }
                 }
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: -50px;
-                bottom: 0;
-                height: 30%;
-                width: 100%;
-                clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
-                background: linear-gradient(
-                    135deg,
-                    var(--primary-color),
-                    var(--light-primary-color)
-                );
-                border: 1rem;
-                box-shadow: 4px 4px 4px var(--white);
-                z-index: -1;
             }
         }
         .right {
