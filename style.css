@@ -30,8 +30,7 @@ h1 {
     padding-top: 1rem;
     line-height: 4rem;
 }
-h2,
-h3 {
+h2 {
     font-size: 2rem;
 }
 
@@ -43,7 +42,7 @@ p {
 nav {
     position: fixed;
     top: 50%;
-    right: 45px;
+    right: 15px;
     bottom: 50%;
     display: flex;
     flex-direction: column;
@@ -53,17 +52,18 @@ nav {
     font-size: 2rem;
     color: var(--white);
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 20;
     div {
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        padding: 0.4rem 0.8rem;
+        padding: 0.8rem 0.8rem;
         border-radius: 50%;
         background-color: var(--grey-3-color);
         color: var(--white);
         i {
+            font-size: 1.5rem;
             pointer-events: none;
         }
     }
@@ -80,7 +80,7 @@ nav {
     padding-right: 7rem;
     max-width: 1200px;
     margin: auto;
-    padding-left: 3rem;
+    padding: 2rem 0 0 3rem;
 }
 
 .home-sect {
@@ -100,9 +100,19 @@ nav {
             var(--primary-color),
             var(--light-primary-color)
         );
+
         .heading-desc {
             text-align: center;
             margin-top: 0.5rem;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
         &::before {
             content: "";
@@ -204,27 +214,9 @@ nav {
     }
 }
 
-i {
-    color: var(--white);
-}
-
-.social-media-icons {
-    display: flex;
-    gap: 2rem;
-    font-size: 1.5rem;
-    i {
-        cursor: pointer;
-        &:hover {
-            color: var(--primary-color);
-            transition: var(--small-transition);
-        }
-    }
-}
-
 /* ABOUT SECTION */
 .about-sect {
-    max-width: 1200px;
-    margin: auto;
+    margin-bottom: 3rem;
 }
 .abt-cont {
     width: 100%;
@@ -248,9 +240,13 @@ i {
             }
         }
     }
+    h3 {
+        margin-bottom: 1rem;
+    }
     .learning-journey {
         display: grid;
         gap: 1rem;
+
         .journey {
             padding: 0 1rem 2rem 1rem;
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
@@ -277,11 +273,11 @@ i {
         }
     }
 }
+/*SKILLS SECTION*/
 
 .skills {
-    margin-top: 2rem;
-    h3 {
-        margin: 0 0 2rem 3rem;
+    h2 {
+        margin: 0 0 2rem 0;
     }
 }
 
@@ -498,6 +494,59 @@ i {
         margin-bottom: 4rem;
     }
 }
+
+/* footer */
+
+i {
+    color: var(--white);
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    i {
+        cursor: pointer;
+        transition: var(--small-transition);
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+    .bi-whatsapp {
+        &:hover {
+            color: var(--green);
+        }
+    }
+    .bi-twitter-x {
+        &:hover {
+            color: var(--background-color);
+        }
+    }
+    .bi-instagram {
+        &:hover {
+            color: orangered;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--grey-5-color);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    .social-media-icons {
+        a {
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 700px) {
     .home-container {
         .left {
