@@ -3,6 +3,8 @@ let body = document.querySelector(".body");
 let sections = document.querySelectorAll(".section");
 let nav = document.querySelector(".nav-bar");
 let footer = document.querySelector("footer");
+let projectCont = document.querySelector(".projects");
+
 let prevScroll = 0;
 navBtn.forEach((btn) => {
     btn.addEventListener("click", function () {
