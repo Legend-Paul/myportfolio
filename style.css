@@ -82,7 +82,7 @@ nav {
     padding: 2rem 0 0 3rem;
     overflow: hidden;
     &:last-child {
-        padding: 0 7rem 0 0;
+        padding-bottom: 0;
     }
 }
 
@@ -390,7 +390,7 @@ nav {
 .contact-cont {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    place-content: center;
+
     gap: 3rem;
     .my-contact {
         display: flex;
