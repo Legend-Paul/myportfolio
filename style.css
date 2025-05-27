@@ -470,6 +470,9 @@ nav {
             border-radius: 0.25rem;
             display: grid;
             width: 100%;
+            span {
+                color: var(--red);
+            }
 
             label {
                 margin-top: 1rem;
@@ -538,7 +541,7 @@ nav {
                 }
             }
         }
-        form ~ {
+        form {
             width: 100%;
         }
     }
