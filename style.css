@@ -21,6 +21,7 @@ body {
     color: var(--white);
     line-height: 1.75rem;
     overflow-x: hidden;
+    padding: 0;
 }
 h1 {
     font-size: 3rem;
@@ -379,7 +380,6 @@ nav {
 
 /* MY CONTACT */
 .contact-sect {
-    padding-bottom: 3rem;
     h2 {
         margin-bottom: 2rem;
     }
@@ -593,9 +593,6 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        padding-bottom: 5rem;
-    }
     nav {
         div {
             padding: 0.4rem 0.4rem;
