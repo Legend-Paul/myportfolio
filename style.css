@@ -127,7 +127,9 @@ nav {
         }
     }
     .home-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
         padding-top: 12rem;
         width: 100%;
         gap: 4rem;
@@ -171,43 +173,6 @@ nav {
 
                 .name {
                     color: var(--primary-color);
-                }
-            }
-            .more-information {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-bottom: 3rem;
-
-                button {
-                    display: flex;
-                    gap: 1.5rem;
-                    font-size: 0.85rem;
-                    background-color: var(--background-color);
-                    border: 2px solid var(--white);
-                    border-radius: 1.5rem;
-                    color: var(--white);
-                    padding: 0.8rem 1.2rem;
-                    position: relative;
-                    cursor: pointer;
-
-                    p,
-                    i {
-                        z-index: 12;
-                    }
-                    &:hover {
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            height: 100%;
-                            border-radius: 1.5rem;
-                            background-color: var(--primary-color);
-                            width: 100%;
-                            animation: btn-animation 0.4s ease-out;
-                        }
-                    }
                 }
             }
         }
