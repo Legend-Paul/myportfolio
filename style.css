@@ -18,7 +18,6 @@
 body {
     background-color: var(--background-color);
     font-family: "Ancizar Serif", serif;
-
     color: var(--white);
     line-height: 1.75rem;
     overflow-x: hidden;
@@ -81,6 +80,7 @@ nav {
     max-width: 90%;
     margin: auto;
     padding: 2rem 0 0 3rem;
+    overflow: hidden;
 }
 
 .home-sect {
@@ -338,16 +338,17 @@ nav {
 .projects {
     height: 100%;
     margin: 3rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1rem));
-    gap: 3rem;
-    place-items: center;
-    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+
     .project {
         position: relative;
         border: 2px solid var(--light-primary-color);
         border-radius: 0.5rem;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+        width: 15rem;
         .img-cont {
             height: 8rem;
             img {
