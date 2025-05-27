@@ -160,7 +160,6 @@ nav {
         }
         .right {
             z-index: 20;
-            margin-top: 2rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -598,14 +597,8 @@ footer {
         padding-bottom: 5rem;
     }
     nav {
-        position: fixed;
-        top: 90%;
-        right: 50%;
-        left: 50%;
-        flex-direction: row;
-
         div {
-            padding: 0.4rem 0.8rem;
+            padding: 0.4rem 0.4rem;
             i {
                 font-size: 1.4rem;
             }
