@@ -78,7 +78,7 @@ nav {
 .section {
     min-height: 100vh;
     padding-right: 7rem;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
     padding: 2rem 0 0 3rem;
 }
@@ -340,9 +340,6 @@ nav {
     margin: 3rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1rem));
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     gap: 3rem;
     place-items: center;
     place-content: center;
@@ -376,8 +373,7 @@ nav {
             p {
                 font-size: 1rem;
             }
-            .technologies {
-            }
+
             .links {
                 display: flex;
                 gap: 4rem;
@@ -418,16 +414,16 @@ nav {
 
 /* MY CONTACT */
 .contact-sect {
-    padding: 2rem 0;
-    h1 {
+    padding-bottom: 3rem;
+    h2 {
         margin-bottom: 2rem;
     }
 }
 .contact-cont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 
-    gap: 1.5rem;
+    gap: 3rem;
     .my-contact {
         display: flex;
         flex-direction: column;
@@ -441,6 +437,9 @@ nav {
             display: flex;
             flex-direction: column;
             gap: 0.52rem;
+            h4 {
+                font-size: 1.5rem;
+            }
             .name {
                 margin-top: 0.5rem;
             }
@@ -477,6 +476,9 @@ nav {
                 display: grid;
                 gap: 1rem;
                 max-width: 30rem;
+                &:first-child {
+                    margin-top: 0;
+                }
                 input {
                     color: var(--white);
                     height: 2.2rem;
