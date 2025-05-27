@@ -81,9 +81,6 @@ nav {
     margin: auto;
     padding: 2rem 0 0 3rem;
     overflow: hidden;
-    &:last-child {
-        padding-bottom: 0;
-    }
 }
 
 .home-sect {
@@ -601,7 +598,7 @@ footer {
     }
     nav {
         div {
-            padding: 0.4rem 0.6rem;
+            padding: 0.4rem 0.4rem;
             i {
                 font-size: 1.4rem;
             }
