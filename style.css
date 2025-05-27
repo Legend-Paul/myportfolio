@@ -93,7 +93,7 @@ nav {
         top: 0;
         left: 0;
         width: 100%;
-        padding: 1.5rem 0;
+        padding: 1.5rem;
         padding-bottom: 3rem;
         background: linear-gradient(
             135deg,
@@ -128,7 +128,7 @@ nav {
     }
     .home-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         align-items: center;
         padding-top: 12rem;
         width: 100%;
@@ -146,7 +146,7 @@ nav {
                 outline: 0.15rem solid var(--white);
                 overflow: hidden;
                 border-radius: 50%;
-                margin-top: 2rem;
+                margin: 2rem 0;
                 transition: var(--small-transition);
                 filter: grayscale(0.75);
                 img {
@@ -591,10 +591,6 @@ footer {
         width: 30%;
         height: 60% !important;
     }
-    .home-container {
-        grid-template-columns: none;
-        gap: 10rem;
-    }
 }
 
 @media screen and (max-width: 700px) {
@@ -618,12 +614,6 @@ footer {
     .section {
         min-height: 100vh;
         margin-right: 3rem;
-    }
-    .more-information {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        margin-bottom: 4rem;
     }
 }
 
