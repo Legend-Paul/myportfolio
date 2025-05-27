@@ -595,7 +595,7 @@ footer {
 @media screen and (max-width: 700px) {
     nav {
         div {
-            padding: 0.4rem 0.8rem;
+            padding: 0.4rem 1.2rem;
             i {
                 font-size: 1.4rem;
             }
