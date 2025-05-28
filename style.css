@@ -23,7 +23,18 @@ body {
     overflow-x: hidden;
     padding: 0;
 }
-
+.light-mode {
+    --primary-color: #5046e5;
+    --light-primary-color: rgb(17, 188, 255);
+    --background-color: #f9f9f9;
+    --white: #333333;
+    --grey-3-color: rgb(172, 169, 169);
+    --grey-5-color: rgb(172, 169, 169);
+    --small-transition: all 0.5s ease-in-out;
+    --large-transition: all 1s ease-in-out;
+    --green: green;
+    --red: red;
+}
 h1 {
     font-size: 3rem;
     z-index: 11;

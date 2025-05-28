@@ -108,18 +108,26 @@ function toggleActiveIcon() {
             console.log(activeIcon, "active icon");
 
             if (icon) {
-                activeIconCont.innerHTML = displayMode(icon);
+                activeIconCont.innerHTML = changeModeIcon(icon);
 
                 activeIcon.classList.remove("active");
-
                 activeIcon.classList.add("inactive");
                 iconCont.classList.remove("inactive");
                 iconCont.classList.add("active");
+                let mode = icon.nextElementSibling;
+                displayMode(mode.innerText);
             }
         }
     });
 }
-function displayMode(icon) {
+function displayMode(mode) {
+    if (mode === "Dark") {
+        document.body.classList.remove("light-mode");
+    } else {
+        document.body.classList.add("light-mode");
+    }
+}
+function changeModeIcon(icon) {
     return `${icon.outerHTML} <i class="bi bi-chevron-down"></i>`;
 }
 toggleActiveIcon();
