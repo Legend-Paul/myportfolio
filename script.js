@@ -6,6 +6,8 @@ let sections = document.querySelectorAll(".section");
 let nav = document.querySelector(".nav-bar");
 let footer = document.querySelector("footer");
 let projectCont = document.querySelector(".projects");
+let activeIconCont = document.querySelector(".active-icon");
+let inactiveIconConts = document.querySelector(".inactive-icons");
 
 let prevScroll = 0;
 navBtn.forEach((btn) => {
@@ -78,3 +80,46 @@ function displaySkills() {
     }
 }
 displaySkills();
+
+function hideInactiveIcons() {
+    inactiveIconConts.classList.remove("inactive-display");
+}
+function displayIactiveIcons() {
+    document.addEventListener("click", (e) => {
+        let activeIcon = e.target.closest(".active-icon");
+        if (activeIcon) {
+            activeIconCont.classList.toggle("active-display");
+            inactiveIconConts.classList.add("inactive-display");
+        } else {
+            hideInactiveIcons();
+        }
+    });
+}
+displayIactiveIcons();
+
+function toggleActiveIcon() {
+    inactiveIconConts.addEventListener("click", (e) => {
+        let iconCont = e.target.closest(".icon-cont");
+
+        if (iconCont) {
+            let icon = iconCont.querySelector("i");
+            let activeIcon = inactiveIconConts.querySelector(".active");
+            // console.log(icon, "clicked");
+            console.log(activeIcon, "active icon");
+
+            if (icon) {
+                activeIconCont.innerHTML = displayMode(icon);
+
+                activeIcon.classList.remove("active");
+
+                activeIcon.classList.add("inactive");
+                iconCont.classList.remove("inactive");
+                iconCont.classList.add("active");
+            }
+        }
+    });
+}
+function displayMode(icon) {
+    return `${icon.outerHTML} <i class="bi bi-chevron-down"></i>`;
+}
+toggleActiveIcon();

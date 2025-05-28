@@ -23,6 +23,7 @@ body {
     overflow-x: hidden;
     padding: 0;
 }
+
 h1 {
     font-size: 3rem;
     z-index: 11;
@@ -52,6 +53,7 @@ p {
         gap: 0.5rem;
         cursor: pointer;
     }
+
     .inactive-icons {
         display: grid;
         position: absolute;
@@ -63,7 +65,7 @@ p {
         visibility: hidden;
         opacity: 0;
         transition: var(--small-transition);
-        div {
+        .icon-cont {
             display: flex;
             gap: 0.5rem;
             align-items: center;
@@ -88,6 +90,11 @@ p {
         &:has(.inactive:hover) .active {
             background-color: var(--grey-5-color);
         }
+    }
+    .inactive-display {
+        visibility: visible;
+        opacity: 1;
+        transition: var(--small-transition);
     }
 }
 
