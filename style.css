@@ -5,6 +5,7 @@
     --white: white;
     --grey-5-color: #2a2e35;
     --grey-3-color: rgb(172, 169, 169);
+    --grey-4-color: rgb(139, 137, 137);
     --small-transition: all 0.5s ease-in-out;
     --large-transition: all 1s ease-in-out;
     --green: green;
@@ -30,6 +31,7 @@ body {
     --white: #333333;
     --grey-3-color: rgb(172, 169, 169);
     --grey-5-color: rgb(172, 169, 169);
+    --grey-4-color: #2a2e35;
     --small-transition: all 0.5s ease-in-out;
     --large-transition: all 1s ease-in-out;
     --green: green;
@@ -522,7 +524,7 @@ nav {
                     height: 3rem;
                     padding: 0.5rem;
                     border-radius: 0.25rem;
-                    border: 2px solid var(--grey-3-color);
+                    border: 2px solid var(--grey-4-color);
                     background-color: var(--grey-5-color);
 
                     &:user-valid,
@@ -547,7 +549,7 @@ nav {
                 max-width: 30rem;
                 border-radius: 0.25rem;
                 background-color: var(--grey-5-color);
-                border: 2px solid var(--grey-3-color);
+                border: 2px solid var(--grey-4-color);
                 outline: none;
                 &:focus:invalid,
                 &:focus:valid {

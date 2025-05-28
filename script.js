@@ -115,12 +115,12 @@ function toggleActiveIcon() {
                 iconCont.classList.remove("inactive");
                 iconCont.classList.add("active");
                 let mode = icon.nextElementSibling;
-                displayMode(mode.innerText);
+                displayMode(mode.innerText, icon);
             }
         }
     });
 }
-function displayMode(mode) {
+function displayMode(mode, icon) {
     if (mode === "Dark") {
         document.body.classList.remove("light-mode");
     } else {
