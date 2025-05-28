@@ -1,3 +1,5 @@
+import { skills } from "./data/skillData.js";
+let skillContainer = document.querySelector(".skills-cont");
 let navBtn = document.querySelectorAll(".nav-btn");
 let body = document.querySelector(".body");
 let sections = document.querySelectorAll(".section");
