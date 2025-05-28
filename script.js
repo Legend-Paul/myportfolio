@@ -1,4 +1,4 @@
-import { skills } from "./data/skillData.js";
+import { skillsData } from "./data/skillData.js";
 let skillContainer = document.querySelector(".skills-cont");
 let navBtn = document.querySelectorAll(".nav-btn");
 let body = document.querySelector(".body");
@@ -50,3 +50,31 @@ function positionFooter(scrollingHeight) {
         prevScroll = scrollingHeight;
     }
 }
+
+function createSkillCard(img, name, content) {
+    // Create a skill card with the provided image, name, and content
+    return `
+        <div class="skill html">
+            <div class="title">
+                <img src="images/${img}" alt="img Image" />
+                <h4>${name}</h4>
+            </div>
+            <div class="content">
+                <p>
+                    ${content}
+                </p>
+            </div>
+        </div>
+    `;
+}
+
+function displaySkills() {
+    // Generate skill cards and append them to the skill container
+    let data = [...skillsData];
+    for (let i = 0; i < data.length * 2; i++) {
+        let skill = data[i % data.length];
+        let skillCard = createSkillCard(skill.img, skill.name, skill.content);
+        skillContainer.innerHTML += skillCard;
+    }
+}
+displaySkills();
