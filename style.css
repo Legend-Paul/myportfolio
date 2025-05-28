@@ -41,36 +41,52 @@ p {
 .mode-icons {
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
     z-index: 200;
-    display: flex;
-    gap: 1rem;
-    font-size: 2rem;
     color: var(--white);
-    i {
-        font-size: 1.5rem;
-        cursor: pointer;
-        transition: var(--small-transition);
-    }
-    .active {
-        color: var(--primary-color);
-        transition: all 0.4s ease-in-out;
-    }
+
     .active-icon {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        gap: 0.5rem;
         cursor: pointer;
     }
     .inactive-icons {
-        display: flex;
-        gap: 1.5rem;
+        display: grid;
         position: absolute;
-        bottom: -3rem;
-        right: 0;
-        display: none;
+        bottom: -6rem;
+        left: 0;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        background-color: var(--grey-5-color);
+        visibility: hidden;
+        opacity: 0;
+        transition: var(--small-transition);
+        div {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            padding: 0 0.125rem;
+            border-radius: 0.125rem;
+            cursor: pointer;
 
-        i {
-            &:hover {
-                color: var(--primary-color);
+            p {
+                font-size: 0.8rem;
             }
+        }
+
+        .active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .inactive:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        &:has(.inactive:hover) .active {
+            background-color: var(--grey-5-color);
         }
     }
 }
