@@ -519,7 +519,7 @@ nav {
                 }
                 input {
                     color: var(--white);
-                    height: 2.2rem;
+                    height: 3rem;
                     padding: 0.5rem;
                     border-radius: 0.25rem;
                     border: 2px solid var(--grey-3-color);
