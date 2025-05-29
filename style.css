@@ -149,11 +149,10 @@ nav {
 
 .section {
     min-height: 100vh;
-    padding-right: 7rem;
-    max-width: 90%;
+    padding-right: 5rem !important;
+    max-width: 100%;
     margin: auto;
     padding: 2rem 0 0 3rem;
-    overflow: hidden;
 }
 
 .home-sect {
@@ -454,11 +453,13 @@ nav {
 .contact-sect {
     h2 {
         margin-bottom: 2rem;
+        width: 100%;
     }
 }
 .contact-cont {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    width: 100%;
 
     gap: 3rem;
     .my-contact {
@@ -502,11 +503,11 @@ nav {
         }
     }
     .client-contact {
-        width: 100%;
+        width: 90% !important;
         form {
             border-radius: 0.25rem;
             display: grid;
-            width: 100%;
+            width: 100% !important;
             span {
                 color: var(--red);
             }
@@ -515,7 +516,7 @@ nav {
                 margin-top: 1rem;
                 display: grid;
                 gap: 1rem;
-                max-width: 30rem;
+                width: 90% !important;
                 &:first-child {
                     margin-top: 0;
                 }
@@ -546,7 +547,7 @@ nav {
                 margin: 1rem 0;
                 color: var(--white);
                 padding: 0.5rem;
-                max-width: 30rem;
+                width: 90% !important;
                 border-radius: 0.25rem;
                 background-color: var(--grey-5-color);
                 border: 2px solid var(--grey-4-color);
@@ -675,17 +676,10 @@ footer {
     }
     .section {
         min-height: 100vh;
-        margin-right: 3rem;
     }
 }
-
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 635px) {
     .home-container {
-        .left {
-            &::after {
-                height: 18rem;
-                width: 18rem;
-            }
-        }
+        margin-top: 5rem;
     }
 }
