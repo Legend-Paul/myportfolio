@@ -149,10 +149,10 @@ nav {
 
 .section {
     min-height: 100vh;
-    padding-right: 5rem !important;
+    overflow: hidden;
     max-width: 100%;
     margin: auto;
-    padding: 2rem 0 0 3rem;
+    padding: 2rem 5rem 0 3rem;
 }
 
 .home-sect {
@@ -199,8 +199,8 @@ nav {
         }
     }
     .home-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        display: flex;
+        justify-content: center;
         align-items: center;
         padding-top: 12rem;
         width: 100%;
@@ -312,6 +312,7 @@ nav {
 /*SKILLS SECTION*/
 
 .skills {
+    padding-right: 0;
     h2 {
         margin: 0 0 2rem 0;
     }
@@ -365,15 +366,14 @@ nav {
 /* PROJECTS */
 .projects-cont {
     margin-top: 4rem;
-    padding-right: 7rem;
     h3 {
         font-size: 1.6rem;
     }
 }
 
 .projects {
-    height: 100%;
     margin: 3rem 0;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -457,12 +457,12 @@ nav {
     }
 }
 .contact-cont {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    display: flex;
     width: 100%;
 
     gap: 3rem;
     .my-contact {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -503,7 +503,8 @@ nav {
         }
     }
     .client-contact {
-        width: 90% !important;
+        width: 100%;
+        padding-bottom: 2rem;
         form {
             border-radius: 0.25rem;
             display: grid;
@@ -516,7 +517,7 @@ nav {
                 margin-top: 1rem;
                 display: grid;
                 gap: 1rem;
-                width: 90% !important;
+                width: 100% !important;
                 &:first-child {
                     margin-top: 0;
                 }
@@ -547,7 +548,7 @@ nav {
                 margin: 1rem 0;
                 color: var(--white);
                 padding: 0.5rem;
-                width: 90% !important;
+                width: 100% !important;
                 border-radius: 0.25rem;
                 background-color: var(--grey-5-color);
                 border: 2px solid var(--grey-4-color);
@@ -678,8 +679,44 @@ footer {
         min-height: 100vh;
     }
 }
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 780px) {
     .home-container {
         margin-top: 5rem;
+    }
+    .section {
+        padding-left: 1rem;
+    }
+    .contact-cont {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .home-sect {
+        header {
+            padding: 1rem;
+            padding-bottom: 2rem;
+        }
+        .home-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-sect {
+        .home-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    .mode-icons {
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    nav {
+        right: 10px;
+        bottom: 10px;
     }
 }
