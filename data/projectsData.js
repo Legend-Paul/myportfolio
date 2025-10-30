@@ -13,10 +13,10 @@ The goal of this project is to provide a lightweight for managing files locally 
   
   {
     title: "E Mall",
-    description: `E-Mall, a responsive e-commerce.Product browsing and details. Add, update, and remove items from the cart. Cart persistence using LocalStorage. Smooth navigation with React Router
+    description: `E-Mall, a responsive e-commerce. Product browsing and details. Add, update, and remove items from the cart. Cart persistence using LocalStorage. Smooth navigation with React Router
 `,
     image: "images/projects/emall.png",
-    technologies: ["REACT", "CSS3",],
+    technologies: ["REACT", "CSS3", "JAVASCRIPT"],
     codeLink: "https://github.com/Legend-Paul/E-MALL",
     liveLink: "https://legendpaulemall.netlify.app/"
   },
@@ -26,7 +26,7 @@ The goal of this project is to provide a lightweight for managing files locally 
     description: `CV Application Builder built to allow users to create, preview professional CV. User can also download the cv in to theit machine as pdf for free
 This project helped sharpen my skills in React, state management, and UI/UX design.`,
     image: "images/projects/cv.png",
-    technologies: ["REACT", "CSS3",],
+    technologies: ["REACT", "CSS3", "JAVASCRIPT"],
     codeLink: "https://github.com/Legend-Paul/CV-Application",
     liveLink: "https://legendpaulcvapplication.netlify.app/"
   },

@@ -313,9 +313,11 @@ nav {
 
 .skills {
     padding-right: 0;
+    overflow-x: scroll;
     h2 {
         margin: 0 0 2rem 0;
     }
+    padding-bottom: 1.5rem;    
 }
 
 .skills-cont {
