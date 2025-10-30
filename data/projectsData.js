@@ -1,51 +1,46 @@
 
 export const projects = [
-  {
-    title: "Todo List",
-    description: "A simple todo list application that allows users to add, edit, and delete tasks.",
-    image: "images/projects/todolist.png",
-    technologies: ["HTML5", "CSS3", "JAVASCRIPT"],
-    codeLink: "https://github.com/Legend-Paul/TodoList-App.git",
-    liveLink: "https://legend-paul.github.io/TodoList-App/"
+    {
+    title: "File Cloud",
+    description: `FileCloud it allows users to upload, store, view, and share files directly through the browser.
+The goal of this project is to provide a lightweight for managing files locally or across connected users.`,
+    image: "images/projects/filecloud.png",
+    technologies: ["EXPRESS", "EJS", "CSS3"],
+    codeLink: "https://github.com/Legend-Paul/FileCloud",
+    liveLink: "https://legendpaul-filecloud.onrender.com/"
   },
+
+  
   {
-    title: "Battleship Game",
-    description: "A classic battleship game where players can place ships and try to sink each other's fleet.",
-    image: "images/projects/battleship.png",
-    technologies: ["HTML5", "CSS3", "JAVASCRIPT"],
-    codeLink: "https://github.com/Legend-Paul/js-Battleship-Game.git",
-    liveLink: "https://legend-paul.github.io/js-Battleship-Game/"
+    title: "E Mall",
+    description: `E-Mall, a responsive e-commerce.Product browsing and details. Add, update, and remove items from the cart. Cart persistence using LocalStorage. Smooth navigation with React Router
+`,
+    image: "images/projects/emall.png",
+    technologies: ["REACT", "CSS3",],
+    codeLink: "https://github.com/Legend-Paul/E-MALL",
+    liveLink: "https://legendpaulemall.netlify.app/"
   },
+
   {
-    title: "Calculator",
-    description: "A simple calculator application that performs basic arithmetic operations.",
-    image: "images/projects/calculator.png",
-    technologies: ["HTML5", "CSS3", "JAVASCRIPT"],
-    codeLink: "https://github.com/Legend-Paul/js-calculator-app.git",
-    liveLink: "https://legend-paul.github.io/js-calculator-app/"
+    title: "CV Application",
+    description: `CV Application Builder built to allow users to create, preview professional CV. User can also download the cv in to theit machine as pdf for free
+This project helped sharpen my skills in React, state management, and UI/UX design.`,
+    image: "images/projects/cv.png",
+    technologies: ["REACT", "CSS3",],
+    codeLink: "https://github.com/Legend-Paul/CV-Application",
+    liveLink: "https://legendpaulcvapplication.netlify.app/"
   },
+  
   {
-    title: "Weather App",
-    description: "A weather application that provides current weather information for any location.",
-    image: "images/projects/weatherApp.png",
-    technologies: ["HTML5", "CSS3", "JAVASCRIPT"],
-    codeLink: "https://github.com/Legend-Paul/js-weather-app-project.git",
-    liveLink: "https://legend-paul.github.io/js-weather-app-project/"
+    
+    title: "INVENTRACK",
+    description: `This is a simple Inventory Management System built with modern web tools.
+It allows you to keep track of items, categories, and all the details you need for managing stock.`,
+    image: "images/projects/inventrack.png",
+    technologies: ["EXPRES", "EJS", "CSS3"],
+    codeLink: "https://github.com/Legend-Paul/INVENTORY",
+    liveLink: "https://legendpaul-inventory.onrender.com/"
   },
-  {
-    title: "Library App",
-    description: "A library application that allows users to add, edit, and delete books from their collection.",
-    image: "images/projects/library.png",
-    technologies: ["HTML5", "CSS3", "JAVASCRIPT"],
-    codeLink: "https://github.com/Legend-Paul/js-Library.git",
-    liveLink: "https://legend-paul.github.io/js-Library/"
-  },
-  {
-    title: "Restaurant Landing Page",
-    description: "A restaurant landing page designed in Figma, showcasing a modern and responsive layout.",
-    image: "images/projects/restaurantLandingPage.png",
-    technologies: ["FIGMA"],
-    codeLink: "https://www.figma.com/design/bqCE3IzkdRY9dpEsT8WLo4/Paul-s-Restaurant-Landing-page?node-id=0-1&t=Axvhr1vfY7OU9zHC-1",
-    liveLink: "https://www.figma.com/proto/bqCE3IzkdRY9dpEsT8WLo4/Paul-s-Restaurant-Landing-page?node-id=2-2&t=Axvhr1vfY7OU9zHC-0"
-  }
+  
+  
 ];
