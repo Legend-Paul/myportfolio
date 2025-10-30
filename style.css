@@ -317,8 +317,13 @@ nav {
     h2 {
         margin: 0 0 2rem 0;
     }
-    padding-bottom: 1.5rem;    
+    padding-bottom: 1.5rem; 
+::-webkit-scrollbar {
+ background-color: red;   
 }
+}
+
+
 
 .skills-cont {
     display: flex;
@@ -617,6 +622,11 @@ i {
     .bi-instagram {
         &:hover {
             color: orangered;
+        }
+    }
+    .bi-linkedin {
+        &:hover {
+            color: var(--primary-color);
         }
     }
 }

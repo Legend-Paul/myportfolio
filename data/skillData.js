@@ -1,52 +1,64 @@
 let skillsData = [
-    {
-        name: "HTML",
-        img: "html.png",
-        content:
-            "I structure modern websites with HTML5, defining content with clarity and purpose to build accessible and semantic layouts. I ensure solid foundations for styling and functionality that support every user’s journey..",
-    },
-    {
-        name: "CSS",
-        img: "css.jpg",
-        content:
-            "I style modern websites with CSS3, crafting visually appealing and responsive designs that adapt seamlessly to all devices. I enhance user experience through animations and transitions, ensuring every interaction is smooth and engaging.",
-    },
-    {
-        name: "JavaScript",
-        img: "javascript.jpg",
-        content:
-            "I bring interactivity to modern websites with JavaScript, enhancing user engagement through dynamic content updates, form validations, and real-time data processing. I ensure a responsive and intuitive user experience across all platforms.",
-    },
-    {
-        name: "PYTHON",
-        img: "python.png",
-        content:
-            "I develop robust back-end solutions with Python, leveraging its versatility for data processing, automation, and web development. I create efficient algorithms and scripts that enhance functionality and performance across various applications.",
-    },
-    {
-        name: "FIGMA",
-        img: "figma.png",
-        content:
-            "I design intuitive user interfaces with Figma, creating wireframes and prototypes that enhance user experience. I collaborate effectively with teams to ensure designs are visually appealing and functional, streamlining the design process from concept to implementation.",
-    },
-    {
-        name: "GIT",
-        img: "git.png",
-        content:
-            "I manage version control with Git, ensuring collaborative development and code integrity. I track changes, resolve conflicts, and maintain a clean project history, facilitating smooth teamwork and efficient project management.",
-    },
-    {
-        name: "GITHUB",
-        img: "github.png",
-        content:
-            "I host and share projects on GitHub, utilizing its collaborative features for version control and code review. I contribute to open-source projects, enhancing my skills while engaging with a global developer community.",
-    },
-    {
-        name: "MYSQL",
-        img: "mysql.png",
-        content:
-            "I manage databases with MySQL, ensuring efficient data storage and retrieval for web applications. I design and optimize database schemas, write complex queries, and maintain data integrity to support robust back-end functionality.",
-    },
+  {
+    name: "HTML",
+    img: "html.png",
+    content:
+      "I structure modern websites with HTML5, creating semantic and accessible layouts that serve as a solid foundation for design and functionality. I ensure every element has purpose and clarity to enhance user experience.",
+  },
+  {
+    name: "CSS",
+    img: "css.jpg",
+    content:
+      "I style responsive websites with CSS3, crafting visually appealing layouts that adapt seamlessly to all devices. I use modern techniques such as Flexbox, Grid, and animations to create engaging and polished designs.",
+  },
+  {
+    name: "JavaScript",
+    img: "javascript.jpg",
+    content:
+      "I add interactivity and logic to websites using modern JavaScript (ES6+). From DOM manipulation to API integration, I create dynamic and intuitive user experiences with clean and maintainable code.",
+  },
+  {
+    name: "React",
+    img: "react.png",
+    content:
+      "I build scalable and high-performance user interfaces using React. I create reusable components, manage state efficiently, and implement routing and API interactions for seamless, modern web applications.",
+  },
+  {
+    name: "Express",
+    img: "express.png",
+    content:
+      "I develop back-end applications with Express.js, building RESTful APIs and handling authentication, routing, and middleware efficiently. I focus on clean, modular, and secure server-side architecture.",
+  },
+  {
+    name: "Python",
+    img: "python.png",
+    content:
+      "I develop automation scripts and back-end applications with Python, leveraging its versatility for data handling, scripting, and server-side logic to build efficient and scalable solutions.",
+  },
+  {
+    name: "MySQL",
+    img: "mysql.png",
+    content:
+      "I manage databases with MySQL, designing optimized schemas, writing efficient queries, and ensuring data integrity for web applications that demand reliability and performance.",
+  },
+  {
+    name: "Figma",
+    img: "figma.png",
+    content:
+      "I design intuitive and modern user interfaces in Figma, creating responsive layouts and interactive prototypes that bridge the gap between design and development effectively.",
+  },
+  {
+    name: "Git",
+    img: "git.png",
+    content:
+      "I manage version control with Git, maintaining clean project histories and ensuring smooth collaboration across teams through effective branching, merging, and issue resolution.",
+  },
+  {
+    name: "GitHub",
+    img: "github.png",
+    content:
+      "I use GitHub for project hosting and collaboration, managing repositories, contributing to open-source projects, and streamlining development workflows through pull requests and code reviews.",
+  },
 ];
 
 export { skillsData };
