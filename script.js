@@ -46,9 +46,12 @@ window.onscroll = () => {
 function positionFooter(scrollingHeight) {
     if (prevScroll !== scrollingHeight) {
         if (prevScroll <= scrollingHeight) {
-            footer.style.position = "relative";
+            footer.classList.add("hide");
+            footer.classList.remove("visible");
+
         } else {
-            footer.style.position = "fixed";
+            footer.classList.add("visible");
+            footer.classList.remove("hide");
         }
         prevScroll = scrollingHeight;
     }

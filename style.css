@@ -594,6 +594,7 @@ nav {
 }
 /* footer */
 
+
 i {
     color: var(--white);
 }
@@ -647,6 +648,16 @@ footer {
             }
         }
     }
+}
+
+footer.visible {
+    transform: translateX(0);
+    transition: var(--small-transition);
+}
+
+footer.hide {
+    transform: translateY(100%);
+    transition: var(--small-transition);
 }
 
 /* animations */
