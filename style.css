@@ -690,14 +690,11 @@ footer.hide {
 }
 
 @media screen and (max-width: 700px) {
-    nav {
-        div {
-            padding: 0.8rem 0.9rem;
-            i {
-                font-size: 1.4rem;
+                i {
+                font-size: 1.25rem;
             }
-        }
-    }
+        
+    
     .section {
         min-height: 100vh;
     }
@@ -742,4 +739,7 @@ footer.hide {
         right: 10px;
         bottom: 10px;
     }
+     i {
+                font-size: 1rem;
+            }
 }
