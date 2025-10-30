@@ -1,4 +1,5 @@
 import { skillsData } from "./data/skillData.js";
+import { projects } from "./data/projectsData.js";
 let skillContainer = document.querySelector(".skills-cont");
 let navBtn = document.querySelectorAll(".nav-btn");
 let body = document.querySelector(".body");
@@ -131,3 +132,41 @@ function changeModeIcon(icon) {
     return `${icon.outerHTML} <i class="bi bi-chevron-down"></i>`;
 }
 toggleActiveIcon();
+
+//projects 
+const projectsContainer = document.querySelector(".projects");
+
+function renderProjects() {
+  projectsContainer.innerHTML = projects.map(project => `
+    <div class="project">
+      <div class="img-cont">
+        <a href="${project.liveLink}" target="_blank">
+          <img src="${project.image}" alt="${project.title} project image" />
+        </a>
+      </div>
+      <div class="project-description">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="technologies">
+          ${project.technologies.map(tech => `<p>${tech}</p>`).join("")}
+        </div>
+        <div class="links">
+          <div class="code">
+            <a target="_blank" href="${project.codeLink}">
+              <i class="bi bi-github"></i>
+              <p>Code</p>
+            </a>
+          </div>
+          <div class="live">
+            <a target="_blank" href="${project.liveLink}">
+              <i class="bi bi-globe"></i>
+              <p>Live</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join("");
+}
+
+renderProjects();
