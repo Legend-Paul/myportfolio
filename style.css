@@ -342,7 +342,7 @@ nav {
         &:hover {
             transform: translateY(-1rem);
             border-color: var(--light-primary-color);
-            border-radius: 0.5rem;
+            border-radius: 0.25rem;
         }
         &:hover .content {
             p {
@@ -392,7 +392,7 @@ nav {
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
         
         .img-cont {
-            height: 10rem;
+            height: 15rem;
             img {
                 aspect-ratio: 4/3;
                 width: 100%;
@@ -404,7 +404,7 @@ nav {
                     border-left: 2px solid var(--light-primary-color);
                     border-top: 2px solid var(--light-primary-color);
                     border-right: 2px solid var(--light-primary-color);
-                    transform: scale(1.2);
+                    transform: scale(1.05);
                     box-shadow: 1px 2px 0.25rem rgba(255, 255, 255, 0.6);
                 }
             }
