@@ -114,14 +114,13 @@ p {
 nav {
     position: fixed;
     top: 50%;
-    right: 15px;
+    right: .5rem;
     bottom: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    font-size: 2rem;
     color: var(--white);
     transform: translateY(-50%);
     z-index: 20;
@@ -130,7 +129,7 @@ nav {
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        padding: 0.8rem 0.8rem;
+        padding: 0.5rem;
         border-radius: 50%;
         background-color: var(--grey-3-color);
         color: var(--white);
@@ -152,7 +151,7 @@ nav {
     overflow: hidden;
     max-width: 100%;
     margin: auto;
-    padding: 2rem 5rem 0 3rem;
+    padding: 2rem 4rem 0 3rem;
 }
 
 .home-sect {
